@@ -18,3 +18,5 @@ class Coche(Vehiculo):
 
 miCoche = Coche()
 miCoche.infoCoche()
+miCoche.ruedas = 10
+miCoche.infoCoche()
