@@ -1,3 +1,5 @@
+from modulo.submodulo import concat
+
 from abc import ABC, abstractmethod
 "PYTHON IS  STRONGLY TYPED AND DYNAMYC"
 "MUTABLES AND IMMUTABLE "
@@ -152,36 +154,38 @@ from abc import ABC, abstractmethod
 "RELACIONES HAS-A"
 
 
-class Motor():
-    tipo = 'Diesel'
+# class Motor():
+#     tipo = 'Diesel'
 
 
-class Ventanas():
-    cantidad = 5
+# class Ventanas():
+#     cantidad = 5
 
 
-class Ruedas():
-    cantidad = 4
+# class Ruedas():
+#     cantidad = 4
 
-    def cambiarCantidad(self, valor):
-        self.cantidad = valor
-
-
-class Carroceria():
-    ventanas = Ventanas()
-    ruedas = Ruedas()
+#     def cambiarCantidad(self, valor):
+#         self.cantidad = valor
 
 
-class Coche():
-    motor = Motor()
-    carroceria = Carroceria()
+# class Carroceria():
+#     ventanas = Ventanas()
+#     ruedas = Ruedas()
 
 
-c = Coche()
-print(c.motor.tipo)
-print(c.carroceria.ventanas.cantidad)
+# class Coche():
+#     motor = Motor()
+#     carroceria = Carroceria()
 
-print(c.carroceria.ruedas.cantidad)
 
-c.carroceria.ruedas.cambiarCantidad(88)
-print(c.carroceria.ruedas.cantidad)
+# c = Coche()
+# print(c.motor.tipo)
+# print(c.carroceria.ventanas.cantidad)
+
+# print(c.carroceria.ruedas.cantidad)
+
+# c.carroceria.ruedas.cambiarCantidad(88)
+# print(c.carroceria.ruedas.cantidad)
+
+concat.sum(7, 8)
